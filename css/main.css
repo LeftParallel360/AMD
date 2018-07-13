@@ -1,0 +1,242 @@
+/*****BASE STYLES*****/
+body {
+font-family:'Lato',sans-serif;
+}
+
+#About,#Work,#into,#Contact {
+  height: 600px;
+}
+
+/****GRID*****/
+
+.full-width {
+  width:1200px;
+  margin:auto;
+}
+
+.half-width {
+  float:left;
+  width: 600px;
+}
+
+.half-width{
+  float:left;
+  width: 600px;
+}
+
+/*****intro****/
+
+
+#intro {
+background-image:url(../img/hiking-man.jpeg );
+background-size: cover;
+height: 600px;
+}
+
+#intro {
+  height:750px;
+}
+
+#intro.full-width{
+  padding-top: 115px;
+  padding-bottom: 115px;
+}
+
+
+#intro h1 {
+  font-family: 'Lato',sans-serif;
+  font-size: 45px;
+  Color: #FE1A1A;
+  padding: 30px;
+}
+
+
+#intro h2 {
+  display: inline-block;
+  white-space: nowrap;
+  float: bottom;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  line-height: 9px;
+  color: #FE1A1A;
+  padding: 400px 5px ;
+  width: 10px;
+}
+
+
+nav {
+  float: right;
+  word-spacing: 20px;
+  padding: 10px 10px;
+  line-height: normal;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: right;
+}
+
+nav ul li a {
+  text-align: right;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 100px;
+
+}
+
+
+img {
+  display: inline-block;
+  width: 10px;
+  clear: both;
+  float: left;
+  font-family: 'Lato', sans-serif;
+  font-size: 35px;
+  line-height: 3.0;
+  color: #FF1919;
+  padding: 10px;
+}
+
+
+/*******ABOUT******/
+
+#about .full-width {
+  width:1200px;
+
+}
+
+#about.half-width {
+  width:300px;
+}
+
+
+#about {
+height: 800px;
+background-image: url(../img/yellow-van.jpeg);
+background-size: cover;
+}
+
+#about h2 {
+  color: #000000;
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-left:-150px;
+  margin-bottom: auto;
+  }
+
+#about p {
+  color:#0006B2;
+  float:right;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  padding: 10px 0 0px;
+  text-align: left;
+
+}
+
+
+/*****WORK******/
+
+
+
+div.gallery {
+    margin: 5px;
+    border: 5px solid #ccc;
+    float: right;
+    width: 400px;
+
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 95%;
+    height: 400px;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+div.gallery{
+  background-color: #B380ff;
+
+
+}
+
+
+/*****CONTACT*****/
+
+
+* {
+    box-sizing: border-box;
+}
+
+.container h2{
+  font-size: 30px;
+}
+.container p{
+  font-size: 20px;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 1px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display:table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 15%;
+        margin-top: 0;
+    }
+}
